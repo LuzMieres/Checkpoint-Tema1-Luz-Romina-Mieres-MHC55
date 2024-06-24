@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+}
+
+.sectionPrincipal {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(14, 14, 107);
+    padding: 20px 0;
+}
+
+.divNav {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 20%;
+    height: 500px;
+
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.active {
+    color: white;
+    text-decoration: none;
+    background-color:rgb(14, 14, 107);
+    width: 100%;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+
+.cards div {
+    width: 250px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding-bottom: 30px;
+}
+
+.cards div img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+article a {
+    color:black;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+article a:hover {
+    color: blue;
+}
+
+footer {
+    background-color: grey;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    font-size: 20px;
+    
+}
+
+footer p:nth-child(1){
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+   
+}
+
+@media only screen and (max-width: 425px){
+    header {
+        font-size: 18px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px 0;
+    }
+    
+    .divNav {
+        width: 25%;
+    }
+
+    .cards div {
+        width: 200px;
+        height: 250px;
+    }
+
+    .cards div p {
+        padding-top: 10px;
+    }
+
+    .cards div img {
+        width: 200px;
+        height: 150px;
+    }
+
+    article h2 {
+       font-size: 18px;
+    }
+
+    footer {
+        height: 150px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 0 10px;
+    }
+}
